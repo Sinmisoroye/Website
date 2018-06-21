@@ -1,48 +1,46 @@
-
 .header {
-  text-align: center;
-  background: url("https://cdn.tourradar.com/s3/tour/original/79329_51048c99.jpg");
-  background: url("https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5244707255001_5214913279001-vs.jpg?pubId=5104226627001&videoId=5214913279001");
-  background-size: cover;
-  background-position: center;
-  border: 7px solid white;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-  font-size: 50px;
+ text-align: center;
+ background: url("https://cdn.tourradar.com/s3/tour/original/79329_51048c99.jpg");
+ background: url("https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5244707255001_5214913279001-vs.jpg?pubId=5104226627001&videoId=5214913279001");
+ background-size: cover;
+ background-position: center;
+ border: 7px solid white;
+ color: white;
+ font-family: 'Roboto Slab', serif;
+ font-size: 50px;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .ul {
-  padding: 10px;
-  background: black;
+ padding: 10px;
+ background: black;
 }
 
 li {
-    display: inline;
-    padding: 0px 20px 0px 20px;
+   display: inline;
+   padding: 0px 20px 0px 20px;
 }
 
 a {
-    color: white;
-    font-size: 20px;
+   color: white;
+   font-size: 20px;
 }
 
 article {
-  max-width: 500px;
-  padding: 20px;
-  margin: 0 auto;
-  color: white;
-  font-family: 'Roboto Slab', serif;
+ padding: 20px;
+ margin: 0 auto;
+ color: white;
+ font-family: 'Roboto Slab', serif;
 }
 
 @media (max-width: 500px) {
-  .header {
-      font-size: 36px;
-    }
-  li {
-    display: block;
-    padding: 5px;
-  }
+ .header {
+     font-size: 36px;
+   }
+ li {
+   display: block;
+   padding: 5px;
+ }
