@@ -1,12 +1,9 @@
 .header {
  text-align: center;
- background: url("https://cdn.tourradar.com/s3/tour/original/79329_51048c99.jpg");
  background: url("https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5244707255001_5214913279001-vs.jpg?pubId=5104226627001&videoId=5214913279001");
  background-size: cover;
  background-position: center;
- border: 7px solid white;
  color: white;
- font-family: 'Roboto Slab', serif;
  font-size: 50px;
 }
 
@@ -21,7 +18,8 @@ body {
 
 li {
    display: inline;
-   padding: 0px 20px 0px 20px;
+   margin: 40px 0 20px 0;
+   font-family: 'Roboto Slab', serif;
 }
 
 a {
@@ -30,18 +28,125 @@ a {
 }
 
 article {
- max-width: 500px;
- padding: 20px;
- margin: 0 auto;
+ height: 500px;
+ width: 800px;
+ border: 12px;
+ border-radius: 25px;
  color: white;
+ position: relative;
+ background-size: cover;
  font-family: 'Roboto Slab', serif;
+ margin: 0 auto;
+ margin-top: 40px;
 }
+
+h6 {
+  font-family: 'Courgette', cursive;
+  margin: -40px 0 70px 0;
+}
+
+h1 {
+    margin: 40px 0px 70px 0;
+   font-family: 'Roboto Slab', serif;
+}
+
+article.food {
+    background: url("https://media.timeout.com/images/101768007/1372/772/image.jpg")
+}
+
+article.wine {
+  background: url("https://ak2.picdn.net/shutterstock/videos/4101892/thumb/8.jpg")
+}
+
+article.gelato {
+  background: url("http://evaandamelia.com/wp-content/uploads/2017/07/16-1-800x533.jpg")
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: rgba(255,255,255,1);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  text-align: justify;
+  line-height: 28px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+#foodDIV {
+    width: 600px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 330px;
+  }
+
+  #wineDIV {
+      width: 600px;
+      padding: 50px 0;
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin-top: 20px;
+      font-family: 'Roboto Slab', serif;
+      margin-left: 330px;
+    }
+
+  #gelatoDIV {
+        width: 600px;
+        padding: 50px 0;
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+        font-family: 'Roboto Slab', serif;
+        margin-left: 330px;
+      }
+
+
 
 @media (max-width: 500px) {
  .header {
-     font-size: 36px;
+     font-size: 50px;
+     margin-top: 20px;
+     line-height: 40px;
+     width: 500px;
+     background-size: cover;
    }
- li {
-   display: block;
-   padding: 5px;
- }
+  h1 {
+      font-size: 36px;
+  }
+   h6 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+   }
+   article {
+     margin: 10px 30px 0 20px;
+     width: 500px;
+   }
+
+   #foodDIV {
+     margin: 50px 30px 0 20px;
+     width: 500px;
+   }
+
+   #wineDIV {
+     margin: 50px 30px 0 20px;
+     width: 500px;
+   }
+
+   #gelatoDIV {
+     margin: 50px 30px 0 20px;
+     width: 500px;
+   }
+
+   p {
+      font-size: 20px;
+      line-height: 24px;
+   }

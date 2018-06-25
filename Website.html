@@ -2,43 +2,100 @@
 <head>
  <link href= "./normalize.css" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 </head>
 
 <body>
  <div class="header">
        <h1>Italiano</h1>
+       <h6>A slice of home in London</h6>
        <div class="ul">
-             <li><a href="#">Food</a></li>
+           <li><a href="./About.html">About</a></li>
+             <li><a href="./Food.html">Food</a></li>
                <li><a href="#">Wine</a></li>
                  <li><a href="#">Gelato</a></li>
-                 <li><a href="./aboutform.html">Create a Login With Us</a></li>
+                 <li><a href="./aboutform.html">Register</a></li>
                </div>
 </div>
+</head>
 
-<article>
-<h2>Food</h2>
-<p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
-<button>Like</button>
+<article class="food">
+<p>Food <br/><small>Check out our top picks for tasty bites that will transport you back to the streets you grew up in... Almost better than the real thing.     </small><button name="1" onclick="foodFunction()"> Hide</button></p>
 </article>
-<article>
-<h2>Wine</h2>
-<p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
-<button>Like</button></article>
-<article>
-<h2>Gelato</h2>
-<p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
-<button>Like</button></article>
-<script>$("button").on("click", function() {
- alert("clicked!")
- });
- </script>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div id="foodDIV">
+  Delicious Italian food from Puglia is now in London...
+  We recommend <i style="color:#FFB6C1">Bombetta</i> in Snaresbrook.
+
+  A little history:
+
+  Bombetta is originally from the farming communities of Puglia where the land was devoted to olive groves, and room to grow trees for firewood was scarce. As fuel was precious, farm workers would head to the local butcher and feast on Bombetta from his communal oven.
+
+  This meat would often be rolled up into a little bundle and contain bits of cheese or be held together by cured meat. A delicious food and a tradition based on community, eating and sharing together was born. And now it's here... </br>
+
+  <a style="color:#FFB6C1" href="http://www.bombettalondon.com">Visit their website</a>
+</div>
+
+<script>
+function foodFunction() {
+    var x = document.getElementById("foodDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+<article class="wine">
+<p>Wine<br/><small>As you know, no meal is complete without the perfect glass of wine. Here's what the city of London has to offer for that perfect bottle of vino.    </small><button name="2" onclick="wineFunction()"> Hide</button></p>
+</article>
+
+<div id="wineDIV">
+  <i style="color:#FFB6C1">Vini Italiani</i> Old Brompton Road opened its doors back in November 2011 and was the first wine bar and store entirely dedicated to Italian wine in London. Offering the largest selection of quality labels (more than 500) and an extensive range of services, Vini Italiani is the point of reference for everything related to Italy’s wine culture.
+
+Loyal to the proverbial warmth of Italian hospitality, Vini Italiani provides a highly professional retail experience thanks to its staff of sommeliers, who will help you experience Italy to the fullest.
+
+You are free to have a classic aperitivo, a tasting experience or even lunch and dinner thanks to Vini Italiani's 'taglieri' (food platters) and choice of cold and hot food!</br>
+<a style="color:#FFB6C1" href="http://www.italianwines.com/content/15-london-bar-store">Visit their website</a>
+</div>
+
+<script>
+function wineFunction() {
+    var x = document.getElementById("wineDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+<article class="gelato">
+<p>Gelato</br><small>Gelato is always a good idea... Check out our favourite spot where the vast selection of flavours will have you drooling.    </small><button name="3" onclick="gelatoFunction()"> Hide</button></p></article>
+<div id="gelatoDIV">
+  <i style="color:#FFB6C1">Amorino</i> is the place we recommend to get your gelato fix in London. Their secret for an Italian gelato par excellence: To always choose the highest quality ingredients, to source them from where they are at their best, and to never add anything artifical to fully appreciate Mother Nature's true flavours. </br>
+<a style="color:#FFB6C1" href="http://www.amorino.com">Visit their website</a>
+</div>
+
+<script>
+function gelatoFunction() {
+    var x = document.getElementById("gelatoDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <style>
  .fa {
    padding: 10px;
    font-size: 30px;
-   width: 20px;
+   width: 50px;
    text-align: center;
    text-decoration: none;
    margin: 10px 2px;
@@ -51,6 +108,7 @@
  .fa-facebook {
    background: #3B5998;
    color: white;
+   margin-left: 320px;
  }
 
  .fa-twitter {
@@ -103,5 +161,5 @@
  <a href="#" class="fa fa-snapchat-ghost"></a>
  <a href="#" class="fa fa-rss"></a>
 
- </body>
+</body>
 </body>
