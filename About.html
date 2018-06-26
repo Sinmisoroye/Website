@@ -9,11 +9,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 <style>
+.container {
+  margin:10px;
+  position: relative;
+}
+
+.mySlides {
+  width:100%;
+}
+
+.slideshow {
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+
+}
 * {box-sizing: border-box;}
 
 p {
   font-family: 'Roboto Slab', serif;
-  width: 1000px;
   margin-left: 20px;
 }
 
@@ -88,6 +102,7 @@ body {color: white}
   <h1> What is Italiano?</h1>
 </header>
 
+<div class="container">
 <p>
   <p style="text-align:center;">
   This website is for people like yourselves. Missing home and wanting a taste of that Italian lifestyle.
@@ -104,6 +119,7 @@ the best wine. What you're craving for, we can help you find it.
   <p style="text-align:center;">
   We have done all the searching and walking just for you!
 </p>
+</div>
 
 
 </body>
@@ -113,13 +129,19 @@ the best wine. What you're craving for, we can help you find it.
 
 </style>
 
-<img class="mySlides" src="pasta and wine.jpg" style="width:80%">
-<img class="mySlides" src="bridges.jpg" style="width:80%">
-<img class="mySlides" src="pizza-1.jpg" style="width:80%">
-<img class="mySlides" src="italian specifics.jpg" style="width:80%">
+<div class="container">
+  <div class="slideshow">
 
-<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <img class="mySlides" src="pasta and wine.jpg">
+    <img class="mySlides" src="bridges.jpg">
+    <img class="mySlides" src="pizza-1.jpg">
+    <img class="mySlides" src="italian specifics.jpg">
+
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+    </div>
+  </div>
 
 <script>
 
